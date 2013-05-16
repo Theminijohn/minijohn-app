@@ -1,0 +1,17 @@
+<% if user_signed_in? %>
+
+
+    <div class="hero-unit">
+      <h1>You're Logged in </h1>
+    </div>
+<% else %>
+
+<div class="hero-unit">
+    <h1>The Minijohn Project</h1>
+    <p>Playing with omniauth / Devise Integration</p>
+    <p>
+      <%= link_to "Sing up Now", new_user_registration_path, class: "btn btn-large btn-primary" %>
+    </p>
+</div>
+
+<% end %>
